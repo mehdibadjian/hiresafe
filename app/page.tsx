@@ -80,10 +80,6 @@ export default function Home() {
                   Stay compliant with automated tools and real-time updates on regulatory changes.
                 </p>
               </div>
-              <div className="flex items-center gap-2" onClick={() => window.open('https://wa.me/6589519656', '_blank')}>
-                <Phone className="h-5 w-5" />
-                <span>+65 8951 9656</span>
-              </div>
             </div>
           </div>
         </section>

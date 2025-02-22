@@ -2,7 +2,7 @@
 
 import type React from "react"
 
-import { Building, Loader2, Mail, Phone } from "lucide-react"
+import { Loader2, Mail, Phone } from "lucide-react"
 import { useState } from "react"
 
 import { Button } from "@/components/ui/button"
@@ -43,8 +43,7 @@ export default function ContactPage() {
 
       toast({
         title: "Message sent",
-        description: "We'll get back to you as soon as possible.",
-        variant: "success",
+        description: "We'll get back to you as soon as possible."
       })
 
       // Reset form
@@ -78,7 +77,7 @@ export default function ContactPage() {
                   <Mail className="h-5 w-5" />
                   <span>support@hiresafe.com</span>
                 </div>
-                <div className="flex items-center gap-2">
+                <div className="flex items-center gap-2" onClick={() => window.open('https://wa.me/6589519656', '_blank')}>
                   <Phone className="h-5 w-5" />
                   <span>+65 8951 9656</span>
                 </div>
