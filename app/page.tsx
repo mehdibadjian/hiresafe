@@ -1,4 +1,4 @@
-import { ArrowRight, CheckCircle2, ShieldCheck, Users } from "lucide-react"
+import { ArrowRight, CheckCircle2, ShieldCheck, Users, Phone } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 
@@ -73,6 +73,10 @@ export default function Home() {
                 <p className="text-gray-500 dark:text-gray-400">
                   Stay compliant with automated tools and real-time updates on regulatory changes.
                 </p>
+              </div>
+              <div className="flex items-center gap-2" onClick={() => window.open('https://wa.me/6589519656', '_blank')}>
+                <Phone className="h-5 w-5" />
+                <span>+65 8951 9656</span>
               </div>
             </div>
           </div>

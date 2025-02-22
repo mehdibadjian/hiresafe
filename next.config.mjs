@@ -1,3 +1,5 @@
+import withWorkbox from 'next-with-workbox';
+
 let userConfig = undefined
 try {
   userConfig = await import('./v0-user-next.config')
@@ -45,4 +47,11 @@ function mergeConfig(nextConfig, userConfig) {
   }
 }
 
-export default nextConfig
+export default withWorkbox({
+  workbox: {
+    swSrc: 'service-worker.js',
+    swDest: 'public/service-worker.js',
+    // ...additional Workbox options...
+  },
+  ...nextConfig,
+});
