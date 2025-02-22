@@ -92,9 +92,6 @@ importers:
       '@radix-ui/react-tooltip':
         specifier: ^1.1.6
         version: 1.1.8(@types/react-dom@19.0.4(@types/react@19.0.10))(@types/react@19.0.10)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@types/nodemailer':
-        specifier: ^6.4.17
-        version: 6.4.17
       '@types/react':
         specifier: latest
         version: 19.0.10
@@ -174,9 +171,18 @@ importers:
         specifier: ^3.24.1
         version: 3.24.2
     devDependencies:
+      '@types/eslint':
+        specifier: ^8.56.12
+        version: 8.56.12
+      '@types/eslint-scope':
+        specifier: ^3.7.7
+        version: 3.7.7
       '@types/node':
-        specifier: ^22
+        specifier: ^22.13.5
         version: 22.13.5
+      '@types/nodemailer':
+        specifier: ^6.4.17
+        version: 6.4.17
       postcss:
         specifier: ^8
         version: 8.5.3
@@ -1480,8 +1486,8 @@ packages:
   '@types/eslint-scope@3.7.7':
     resolution: {integrity: sha512-MzMFlSLBqNF2gcHWO0G1vP/YQyfvrxZ0bF+u7mzUdZ1/xK4A4sru+nraZz5i3iEIk1l1uyicaDVTB4QbbEkAYg==}
 
-  '@types/eslint@9.6.1':
-    resolution: {integrity: sha512-FXx2pKgId/WyYo2jXw63kk7/+TY7u7AziEJxJAnSFzHlqTAS3Ync6SvgYAN/k4/PQpnnVuzoMuVnByKK2qp0ag==}
+  '@types/eslint@8.56.12':
+    resolution: {integrity: sha512-03ruubjWyOHlmljCVoxSuNDdmfZDzsrrz0P2LeJsOXr+ZwFQ+0yQIwNCwt/GYhV7Z31fgtXJTAEs+FYlEL851g==}
 
   '@types/estree@0.0.39':
     resolution: {integrity: sha512-EYNwp3bU+98cpU4lAWYYL7Zz+2gryWH1qbdDTidVd6hkiR6weksdbMadyXKXNPEkQFhXM+hVO9ZygomHXp+AIw==}
@@ -4768,10 +4774,10 @@ snapshots:
 
   '@types/eslint-scope@3.7.7':
     dependencies:
-      '@types/eslint': 9.6.1
+      '@types/eslint': 8.56.12
       '@types/estree': 1.0.6
 
-  '@types/eslint@9.6.1':
+  '@types/eslint@8.56.12':
     dependencies:
       '@types/estree': 1.0.6
       '@types/json-schema': 7.0.15
