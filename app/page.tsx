@@ -1,10 +1,14 @@
 import { ArrowRight, CheckCircle2, ShieldCheck, Users, Phone } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
-
 import { Button } from "@/components/ui/button"
+import { useEffect } from "react"
 
 export default function Home() {
+  useEffect(() => {
+    console.log("Home page loaded")
+  }, [])
+
   return (
     <div className="flex min-h-screen flex-col">
       <main className="flex-1">

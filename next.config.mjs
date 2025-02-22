@@ -23,6 +23,7 @@ const nextConfig = {
     parallelServerBuildTraces: true,
     parallelServerCompiles: true,
   },
+  staticPageGenerationTimeout: 120, // Increase timeout to 120 seconds
 }
 
 mergeConfig(nextConfig, userConfig)
