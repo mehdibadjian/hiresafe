@@ -1,15 +1,15 @@
 "use client";
 
-import { ArrowRight, CheckCircle2, ShieldCheck, Users, Phone } from "lucide-react"
-import Image from "next/image"
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import { useEffect } from "react"
+import { ArrowRight, CheckCircle2, ShieldCheck, Users, Phone } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { useEffect } from "react";
 
 export default function Home() {
   useEffect(() => {
-    console.log("Home page loaded")
-  }, [])
+    console.log("Home page loaded");
+  }, []);
 
   return (
     <div className="flex min-h-screen flex-col">
@@ -33,9 +33,9 @@ export default function Home() {
                       <ArrowRight className="ml-2 h-4 w-4" />
                     </Button>
                   </Link>
-                  <Link href="/about">
+                  <Link href="/services">
                     <Button size="lg" variant="outline">
-                      Learn More
+                      Our Services
                     </Button>
                   </Link>
                 </div>
@@ -84,7 +84,26 @@ export default function Home() {
           </div>
         </section>
       </main>
+      <footer className="border-t py-6 md:py-0">
+        <div className="container flex flex-col items-center justify-between gap-4 md:h-24 md:flex-row">
+          <div className="flex items-center gap-2">
+            <ShieldCheck className="h-6 w-6" />
+            <p className="text-sm leading-loose text-muted-foreground">© 2025 Hiresafe. All rights reserved.</p>
+          </div>
+          <nav className="flex gap-4 sm:gap-6">
+            <Link href="/privacy" className="text-sm font-medium hover:text-primary">
+              Privacy
+            </Link>
+            <Link href="/terms" className="text-sm font-medium hover:text-primary">
+              Terms
+            </Link>
+            <Link href="/contact" className="text-sm font-medium hover:text-primary">
+              Contact
+            </Link>
+          </nav>
+        </div>
+      </footer>
     </div>
-  )
+  );
 }
 
